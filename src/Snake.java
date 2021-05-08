@@ -7,6 +7,7 @@ public class Snake {
         int colonne = Pep8.chari() - 65;
         System.out.println(colonne);
         Pep8.chari();
+
         int range = Pep8.deci() - 1;
         System.out.println(range);
         Pep8.chari();
@@ -236,7 +237,7 @@ public class Snake {
 
     public static void main(String[] args) {
 
-        int score = 0;
+        int score;
         boolean finDejeu = false;
 
         Pep8.stro(Texte.INTRO);
@@ -244,6 +245,7 @@ public class Snake {
         initPlateau(plateau);
 
         while(!finDejeu) {
+
             Pep8.stro(Texte.MSG_SOLL);
 
             Maillon snakeHead = creerSnake();
